@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .meo{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            position: relative;
+        }
+
+        /* before với after -> child của 1 element nào đó (search w3shool) */
+        .meo:before{
+            /* before với after bắt buộc phải có content mới hiện */
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        a{
+            text-decoration: none;
+            position: relative;
+        }
+
+        a:hover:before{
+            width: 100%;
+        }
+
+        a:before{
+            content:'';
+            width: 0%;
+            height: 4px;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            transition: .4s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="meo">
+    </div>
+    <a href="#">Con meo</a>
+</body>
+</html>

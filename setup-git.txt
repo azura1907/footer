@@ -1,0 +1,6 @@
+download git, cài git
+check trong git bash -> command git xem có ra info chưa
+vô visual code -> mở command 
+  git config --global user.email "vanmai1907@gmail.com"
+  git config --global user.name "azura1907"
+
