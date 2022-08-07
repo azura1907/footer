@@ -106,7 +106,34 @@
       border: none;
     }
 
-    
+    .row.copy-right{
+      margin-top: 100px;
+      border-top: 1px solid #EFF0F7;
+      padding-top: 38px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left p{
+      font-size: 16px;
+      color: #6F6C90;
+    }
+
+    .right {
+      width: 187px;
+      height: 21px;
+    }
+
+    .right ul{
+      display: flex;
+    }
+
+    .right ul li{
+      width: 33px;
+      height: 21px;
+      color:#4A3AFF;
+    }
+
     @media screen and (max-width: 600px) {
       .row .col {
         width: 50%;
@@ -195,8 +222,19 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      row2
+    <div class="row copy-right">
+      <div class="left">
+        <p class = "copy-right-text">Copyright © 2022 BRIX Templates | All Rights Reserved</p>
+      </div> 
+      <div class="right">
+        <ul>
+          <li><a href="#"><i class ="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class ="fa fa-twitter"></i></i></a></li>
+          <li><a href="#"><i class ="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class ="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class ="fa-brands fa-youtube"></i></i></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
